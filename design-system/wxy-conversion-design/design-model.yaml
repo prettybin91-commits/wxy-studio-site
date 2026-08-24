@@ -1,0 +1,144 @@
+meta:
+  name: "WXY Kinetic Atelier"
+  source_mode: "reference-remix"
+  reference_url: "https://www.emilianmisera.com/"
+  content_policy: "Preserve all WXY copy and information architecture; reference content and assets are not redistributed."
+
+brand_direction:
+  statement: "검정 무대 위에서 문제를 선명하게 드러내고, 청록색 한 번의 개입으로 구매 결정을 움직이는 전환 설계 스튜디오."
+  character:
+    - "precise"
+    - "kinetic"
+    - "editorial"
+    - "technical"
+    - "human"
+
+color:
+  observed:
+    background: "#000000"
+    text: "#FFFFFF"
+    primary: "#0FD6D9"
+    cursor_accent: "#FF30D9"
+    selected_accent: "#00A3FF"
+    light_surface: "#FAFAF8"
+  adapted:
+    ink: "#000000"
+    paper: "#FAFAF8"
+    signal: "#0FD6D9"
+    pulse: "#FF30D9"
+    focus: "#00A3FF"
+    muted: "#9F9F9F"
+  usage:
+    signal: "Primary CTA, active service, expressive keyword, and status dot only."
+    pulse: "Pointer or short-lived motion accent only; never body text."
+    focus: "Keyboard focus ring and selected state."
+
+typography:
+  observed:
+    sans: "Open Sans"
+    expressive: "Telma"
+    code: "Source Code Pro"
+  renderable:
+    korean_sans: "Noto Sans KR"
+    latin_sans: "Open Sans"
+    expressive_korean: "Gowun Batang"
+    expressive_latin: "Cormorant Garamond"
+    code: "Source Code Pro"
+  line_height_ratio: 1.22
+  roles:
+    display: "Strong Korean sans with one expressive word; never an entire paragraph in the expressive face."
+    body: "Neutral Korean sans, readable measure, regular to semibold."
+    meta: "Uppercase or numeric Source Code Pro labels with generous tracking."
+
+layout:
+  max_width: "1360px"
+  gutters:
+    mobile: "20px"
+    tablet: "48px"
+    desktop: "64px"
+  rhythm: "8px base with deliberately large 96–144px scene changes"
+  composition: "Asymmetric editorial grid; full-width narrative scenes alternate with warm-paper evidence scenes."
+
+components:
+  navigation: "Thin rule, geometric wordmark treatment, compact links, one outlined signal CTA."
+  button: "42–48px tall, 8px radius, signal-tinted pale fill or black inverse, no decorative shadow."
+  card: "Image-led or line-delimited; 8px maximum radius and no generic floating-card treatment."
+  process: "Tall vertical boxes with a top index, concise label, and expandable detail layer."
+  form: "Persistent labels, 52px controls, black/paper contrast, cyan focus and blue focus ring."
+  iconography: "Sparse 2px geometric outline icons used only where they clarify an action."
+
+iconography:
+  observed_style:
+    description: "Sparse, geometric interface marks with clean construction and minimal internal detail."
+    stroke_weight: "medium (about 2px)"
+    corner_treatment: "soft"
+    fill_style: "outline"
+    form_language: "strict-geometric"
+    visual_density: "minimal"
+  fallback_kit:
+    name: "Lucide"
+    weight: "default (2px)"
+    match_score: "high"
+    match_reasoning: "Lucide matches the reference's clean geometric economy without introducing a proprietary symbol set."
+    cdn: "https://unpkg.com/lucide-static@1.8.0/font/lucide.css"
+    icon_class_prefix: "icon-"
+  disclaimer: "Preview and implementation icons are a best-match fallback; reference icons and logos are not redistributed."
+
+hero_stage:
+  preset: "flat-blank"
+  observed_style:
+    description: "A pure black, full-height stage where a centered typographic composition is the visual subject; a cyan expressive word interrupts a bold white sans headline."
+    where_used:
+      - "hero"
+      - "narrative transitions"
+    notes: "The reference uses letter-level and scroll-linked motion; WXY adapts the behavior without copying its wording or identity."
+  background:
+    medium: "absent"
+    color_mode: "monochrome"
+    saturation: "flat"
+    light_source: "none"
+    falloff: "soft"
+    vignette: "off"
+    texture: "clean"
+    motion: "static"
+    intensity: "subtle"
+    safe_zone: "full-bleed"
+    color_palette:
+      - "#000000"
+      - "#0FD6D9"
+      - "#FAFAF8"
+  hero:
+    subject: "composition"
+    form: "three-line typographic stack"
+    placement: "center"
+    scale: "dominant"
+    tint: "brand"
+  relation:
+    type: "flat"
+    bleed: 0
+  disclaimer: "The hero is an original WXY typographic composition; reference logo, copy, and artwork are not used."
+
+motion:
+  character: "Deliberate, typographic, and scroll-aware."
+  durations:
+    utility: "150ms"
+    component: "220ms"
+    narrative: "600–900ms"
+  easing: "cubic-bezier(0.4, 0, 0.2, 1)"
+  rules:
+    - "Use letter or word reveals only for high-value headlines."
+    - "Keep controls responsive and never delay form feedback."
+    - "Continuous rails pause on hover and focus."
+    - "prefers-reduced-motion removes transforms, loops, and scroll-linked progression."
+
+responsive:
+  breakpoints:
+    mobile: "375px"
+    tablet: "768px"
+    desktop: "1024px"
+    wide: "1440px"
+  behavior:
+    mobile: "Single-column reading order; expressive type remains an accent, not a separate floating layer."
+    tablet: "Two-column evidence and metric layouts."
+    desktop: "Asymmetric 5/7 and 4/8 editorial splits."
+    wide: "Large negative space without increasing body measure."

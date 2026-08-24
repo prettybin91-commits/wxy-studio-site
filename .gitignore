@@ -1,0 +1,16 @@
+.next/
+node_modules/
+.pnpm-store/
+
+.env
+.env.*
+!.env.example
+
+*.tsbuildinfo
+*.log
+.DS_Store
+Thumbs.db
+
+.netlify/
+.vercel/
+
